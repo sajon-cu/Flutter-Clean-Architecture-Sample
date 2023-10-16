@@ -7,6 +7,7 @@ import 'package:flutter_clean_architecture_sample/features/daily_news/presentati
 import 'package:flutter_clean_architecture_sample/injection_container.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await initializeDependencies();
   runApp(const MyApp());
 }
